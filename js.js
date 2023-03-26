@@ -11,6 +11,19 @@ function to() {
 
     //最下面ToolBar
     document.getElementById("bottomToolBar").innerHTML="";
+
+    //文本修改
+    document.getElementsByClassName("WebPage-root-g7WXc")[0].style.width="80%";
+    document.getElementsByClassName("WebPage-root-g7WXc")[0].style.backgroundColor="transparent";
+    
+   var parent= document.getElementById("manuscript");
+   //parent.getElementsByTagName("P")[0].style.color='#ff0000';
+   var xx= parent.getElementsByTagName("P");
+   for (var i=0;i<xx.length;i++)
+    { 
+    //console.log(i);
+    parent.getElementsByTagName("P")[i].style.color='#000000';
+    }
 }
 
 to();
