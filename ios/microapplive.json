@@ -1,0 +1,22 @@
+{
+    "errno": 0,
+    "message": "success",
+    "data": [
+        {
+            "appType": 1,
+            "canChoose": true,
+            "appID": "tt3ed7486aa1fd80c3",
+            "appName": "懂车帝",
+            "iconURL": "https://p6-developer-sign.bytemaimg.com/developer/app/tt3ed7486aa1fd80c3/icon71e2ed7~tplv-ke512zj2cu-144x144.jpeg?x-expires=2627833435&x-signature=0WqUnWPh5HTfgd1PoZ60XBCjArc%3D",
+            "reason": ""
+        },
+        {
+            "appType": 1,
+            "canChoose": true,
+            "appID": "ttacc7da7a33ede4b7",
+            "appName": "趣测趣玩",
+            "iconURL": "https://p6-developer-sign.bytemaimg.com/developer/app/ttacc7da7a33ede4b7/iconc153071~tplv-ke512zj2cu-144x144.jpeg?x-expires=2627833843&x-signature=h1Fbv4MYVnEJpTYaj%2FxcrFRTHfg%3D",
+            "reason": ""
+        }
+    ]
+}
