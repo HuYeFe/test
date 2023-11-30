@@ -1,0 +1,43 @@
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name:       名称：github页面
+      url:       网址：${{steps.deployment.outputs.page_url}}{{ steps.deployment.outputs.page_url }}
+    runs-on:     运行：ubuntu-latest
+    steps:
+      - name:       - 名称：结账
+        uses:         使用：actions/checkout@v3
+      - name:       - 名称：设置页面
+        uses:         使用：actions/configure-pages@v3
+      - name:       - 名称：上传神器
+        uses:         使用：actions/upload-pages-artifact@v2
+        with:
+          # 上传整个存储库# Upload entire repository
+          path: '.'
+      - name:       - 名称：部署到 GitHub Pages
+        id:         id：部署
+        uses:         使用：actions/deploy-pages@v2
